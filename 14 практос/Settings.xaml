@@ -1,0 +1,58 @@
+﻿<Window
+    x:Class="_14_практос.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:_14_практос"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Settings"
+    Width="325"
+    Height="215"
+    ResizeMode="NoResize"
+    mc:Ignorable="d">
+    <Grid>
+        <TextBlock
+            Width="105"
+            Height="42"
+            Margin="36,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Количество строк:"
+            TextAlignment="Center"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="Rows"
+            Width="104"
+            Height="46"
+            Margin="37,52,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextAlignment="Center" />
+        <TextBlock
+            Width="106"
+            Height="44"
+            Margin="194,13,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Количество столбцов:"
+            TextAlignment="Center"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="Columns"
+            Width="105"
+            Height="46"
+            Margin="195,52,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextAlignment="Center" />
+        <Button
+            x:Name="Input"
+            Width="160"
+            Height="32"
+            Margin="88,118,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Input_Click"
+            Content="Сохранить данные" />
+    </Grid>
+</Window>
